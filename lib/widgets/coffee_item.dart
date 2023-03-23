@@ -108,7 +108,7 @@ class CoffeeItems extends StatelessWidget {
                                   ),
                                 ),
                                 Container(
-                                  height: 30,
+                                  // height: 30,
                                   width: 30,
                                   decoration: BoxDecoration(
                                     color: AppColors.orange,
