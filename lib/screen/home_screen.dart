@@ -35,7 +35,10 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(height: 20),
                 Text(
                   AppText.bestCoffee,
-                  style: Theme.of(context).textTheme.headline1,
+                  // style: Theme.of(context).textTheme.headlineLarge,
+                  style: Theme.of(context).textTheme.headlineLarge?.apply(
+                    color: AppColors.white
+                  )
                 ),
                 const SizedBox(height: 20),
                 const CustomTextBox(),
@@ -46,7 +49,9 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(height: 20),
                 Text(
                   AppText.special,
-                  style: Theme.of(context).textTheme.headline3,
+                  style: Theme.of(context).textTheme.headlineLarge?.apply(
+                    color: AppColors.white
+                  ),
                 ),
                 const SizedBox(height: 20),
                 const Article(),

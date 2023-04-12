@@ -34,7 +34,7 @@ class CoffeeItems extends StatelessWidget {
               width: 200,
               height: 300,
               margin: const EdgeInsets.only(right: 15.0),
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(6.0),
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 color: AppColors.buttonBlack,
@@ -65,7 +65,7 @@ class CoffeeItems extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 10.0),
+                      const SizedBox(height: 2.0),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -89,7 +89,7 @@ class CoffeeItems extends StatelessWidget {
                                         text: '\$\t',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .headline2!
+                                            .displayMedium!
                                             .copyWith(
                                               color: AppColors.orange,
                                               fontWeight: FontWeight.bold,
@@ -99,7 +99,7 @@ class CoffeeItems extends StatelessWidget {
                                         text: coffees[index].price,
                                         style: Theme.of(context)
                                             .textTheme
-                                            .headline2!
+                                            .displayMedium!
                                             .copyWith(
                                               fontWeight: FontWeight.bold,
                                             ),

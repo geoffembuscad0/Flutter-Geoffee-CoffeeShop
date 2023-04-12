@@ -38,14 +38,16 @@ class Article extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  "Hey, Coffee addict reading this",
-                  style: Theme.of(context).textTheme.headline4,
+                  "Hey Coffee Lover read this",
+                  style: Theme.of(context).textTheme.headlineMedium!.apply(
+                    color: AppColors.white
+                  ),
                 ),
                 const SizedBox(height: 5),
                 Text(
                   "Yes you, scrolling and checking out this amazing app, click here",
-                  style: Theme.of(context).textTheme.headline5!.copyWith(
-                        color: AppColors.dullWhite,
+                  style: Theme.of(context).textTheme.headlineLarge!.copyWith(
+                        color: Colors.white54,
                         fontSize: 13,
                       ),
                 ),
